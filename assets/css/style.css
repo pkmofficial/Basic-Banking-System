@@ -57,7 +57,7 @@ body{
 }
 
 .transaction-img{
-    height: 70vh;
+    /* height: 70vh; */
     width: 100%;
     border-radius: 8%;
 }
