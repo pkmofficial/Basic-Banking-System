@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Banking System</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1490/1490817.png" type="image/x-icon">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+     -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Lato:wght@400;900&family=Montserrat:wght@700;900&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    
+
+<!-- AOS  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    
+    <!-- FONTAWESOME -->
+    <script
+    src="https://kit.fontawesome.com/60c721dd1b.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body onload="loader()">
+  
+  <!-- loader for splash screen -->
+  <div id="loading"></div>
+  
+  <!-- navbar starts here  -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <img style="height: 7vh; padding:1vh;"src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWRlYjU1ZDNjYmRjMDVlOWFmMWNiM2ZjNGJjOTJhYzYzMjBlN2MzYiZjdD1z/Dl1vSg7nXEJ9sw1H1o/giphy.gif" alt="">
+    <a class="navbar-brand" href="">TSF Banking System</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./customers.html">Customers</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">About Us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="./index.html">TSF Banking System</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./customers.html">Customers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Customers</a>
+            </li>
+          </ul>
+        </div>
+    </nav> -->
+    <!-- navbar ends here  -->
+
+    <!-- here content starts here -->
+    <div class="container-fluid transaction-content">
+      <div class="row align-items-center">
+        <div class="col-md-6 col-sm-12 text-center" data-aos="fade-up">
+          <h1>Money transaction</h1>
+          <p class="lead muted">Easy - Fast - Trustworthy</p>
+          <!-- <img style="height: 22vh;"src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDY0NTVmNTMyMzkxYzlkYzYxNTFiZjRiYmY4ZTMyMDI0ZmM1MTQyNyZjdD1z/Ylf4lbEzozfCy7Zne1/giphy.gif" alt=""> -->
+          <img style="height: 22vh;"src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzk5NzA5ZDI4ZjMyM2IwMzhmNTdmMWU0NDE0NjVjN2U2YjljYmUwNSZjdD1z/MetIC06cMWOpaMpV7P/giphy.gif" alt="">
+          <!-- <p>Welcome</p> -->
+          <br>
+          <br>
+          <a class="get-started" href="./customers.html"></i>Get Started</a>
+        </div>
+        <div class="col-md-6 col-sm-12 text-center" data-aos="fade-left">
+          <div class="transaction-img-div">
+            <img class="transaction-img" src="https://cdn.dribbble.com/users/189524/screenshots/7202003/media/f56ec5c320f89eb6f6a3dad9567da9cf.gif" alt="img-showing-money-transfer">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- here content ends here -->
+
+
+    <section id="features" class="row container-fluid">
+      <!-- <div class="container-fluid"> -->
+          <div class="col-lg-4">
+            <i class="fa-solid fa-circle-check"></i>
+            <h3 class="feature-title">Easy to use.</h3>
+            <p>So easy to use, even your kids could do it.</p>
+          </div>
+          <div class="col-lg-4">
+            <!-- <i class="fa-sharp fa-solid fa-bullseye"></i> -->
+            <i class="fa-solid fa-bolt"></i>
+            <!-- <i class="fa-solid fa-shield-plus"></i> -->
+            <h3 class="feature-title">Super Fast.</h3>
+            <p>We always provide lightning fast service.</p>
+          </div>
+          <div class="col-lg-4">
+            <!-- <i class="fa-sharp fa-light fa-shield-check"></i> -->
+            <!-- <i class="fa-sharp fa-light fa-shield-check"></i> -->
+            <!-- <i class="fa-regular fa-user-shield"></i> -->
+            <!-- <i class="fa-solid fa-shield"></i> -->
+            <i class="fa-solid fa-user-shield"></i>
+            <h3 class="feature-title">Secure Data.</h3>
+            <p>Safety of User's Data is our top priority.</p>
+          </div>
+      <!-- </div> -->
+    </section>
+  <!-- Testimonials -->
+
+
+  <!-- Press -->
+
+  <section id="press">
+    <h3>Our Clients</h2>
+    <img src="images/TechCrunch.png" alt="tc-logo" />
+    <img src="images/tnw.png" alt="tnw-logo" />
+    <img src="images/bizinsider.png" alt="biz-insider-logo" />
+    <img src="images/mashable.png" alt="mashable-logo" />
+  </section>
+
+
+  <footer id="footer" class="container-fluid">
+    <p>
+      <a href="https://www.linkedin.com/in/pk-mohanty/" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/pkmofficial" target="_blank">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="https://www.instagram.com/pabitra_kumarrr/" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="mailto:pabitrakumarm084@gmail.com" target="_blank">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+    </p>
+    <p>© All rights reserved 2023.</p>
+  </footer>
+  <marquee style="background-color: #1fa5cc; color: black;">This project was made by Pabitra Kumar Mohanty during internship at The Sparks Foundations [#GRIPAPRIL23]</marquee>
+  <!-- footer starts here -->
+    
+    <!-- footer ends here -->
+
+    <!-- spalsh screen js -->
+    <script>
+      var preloader = document.getElementById("loading");
+      function loader(){
+        preloader.style.display = 'none';
+      }
+    </script>
+
+    <script src="assets/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"></script>
+
+    <!-- aos data  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 700,
+      });
+    </script>
+    
+</body>
+</html>
