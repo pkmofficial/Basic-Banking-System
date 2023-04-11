@@ -1,4 +1,4 @@
-# [Basic Banking System](https://pkmofficial.github.io/Simple-Bank-System-/)
+# Task 1 : Basic Banking System
 
 This project was made during web development internship at [The Sparks Foundation](https://www.thesparksfoundationsingapore.org/) under GRIP-APRIL-23 Programme.
 
